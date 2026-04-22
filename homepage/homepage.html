@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- start css link -->
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/css/animate.min.css">
+    <!-- end css link -->
+    <!-- start js link -->
+    <script src="../common/js/bootstrap.bundle.min.js"></script>
+    <script src="../common/js/sweetalert.min.js"></script>
+    <!-- end js link -->
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-3 text-white fw-bold">Welcome to online quiz examination center</h1>
+        <div class="row bg-white shadow-lg">
+            <div class="col-md-6">
+                <img src="images/img.gif" class="w-100" alt="">
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-danger text-center mt-3 mb-3">Student's Login</h1>
+                <form class="login-form">
+                    <div class="input-group mb-5">
+                        <span class="input-group-text">Choose college Code</span>
+                        <select name="" id="brand-code-el" class="form-select">
+                            <option value="choose space code">Choose college Code</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-5">
+                        <span class="input-group-text">Institute ID</span>
+                        <input type="text" disabled class="form-control">
+                    </div>
+                    <div class="input-group mb-5">
+                        <span class="input-group-text">Password</span>
+                        <input type="password" class="form-control">
+                    </div>                    
+                    <button class="btn w-100 mb-5" disabled>Login</button>
+                    <a href="../company/company.html" class="btn w-100 mb-5">Admin Login</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/homepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="../common/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../common/css/animate.min.css">
+
+  <!-- JS libraries -->
+  <script src="../common/js/bootstrap.bundle.min.js"></script>
+  <script src="../common/js/sweetalert.min.js"></script>
+
+  <!-- MediaPipe Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+
+  <title>Welcome</title>  
+</head>
+<body>
+  <div class="main">
+    <h2 class="question-el">Q-1 : What is your name?</h2>
+    <br>
+    <input type="radio" class="option" id="option-1" value="option-1" name="option">
+    <label for="option-1">My name is just for code.</label>
+    <br><br>
+    <input type="radio" class="option" id="option-2" value="option-2" name="option">
+    <label for="option-2">My name is just for code.</label>
+    <br><br>
+    <input type="radio" class="option" id="option-3" value="option-3" name="option">
+    <label for="option-3">My name is just for code.</label>
+    <br><br>
+    <input type="radio" class="option" id="option-4" value="option-4" name="option">
+    <label for="option-4">My name is just for code.</label>
+    <br><br>
+    <div align="end">
+      <button class="btn next-btn btn-primary">SUBMIT QUESTION</button>
+    </div>
+  </div>
+
+  <!-- ✅ Hidden video & canvas for MediaPipe Face Mesh -->
+  <video id="video" autoplay muted playsinline style="display:none;"></video>
+  <canvas id="canvas" style="position:fixed; top:10px; right:10px; width:220px; height:180px; border:2px solid black; z-index:9999;"></canvas>
+
+  <!-- ✅ Warning messages -->
+  <div id="warningBox" style="color:red; font-weight:bold; display:none;"></div>
+
+  <!-- ✅ Quiz logic -->
+  <script defer src="js/quiz.js"></script>
+</body>
+</html>
