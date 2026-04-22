@@ -6,9 +6,9 @@ A secure web-based quiz platform with integrated proctoring features to prevent 
 
 This project was completed as a team effort by:
 
-- **Prathamesh Kolhe** 
+- **Bhavika Kadam** 
 - **Soham Jathar**
-- **Bhavika Kadam**
+- **Prathamesh Kolhe**
 - **Onkar Deshmukh**
 
 Thank you all for your contributions!
